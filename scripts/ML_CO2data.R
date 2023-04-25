@@ -30,7 +30,7 @@ PUT YOUR CODE HERE!
 # Delete the instructions when you are done
 # Create a new variable that unites data in
 # the year and month columns in the format
-# YEAR-MONTH. Pivot the data so that both
+# year-month. Pivot the data so that both
 # CO2 measurements are in the same column.
 # x---------------------------------------x
 
