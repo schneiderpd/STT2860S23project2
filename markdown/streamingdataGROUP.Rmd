@@ -30,11 +30,11 @@ knitr::opts_chunk$set(
 
 ### Background of the Data
 
-Two files containing data about thge content of streaming services were downloaded from Kaggle:  [Disney+ Movies and TV Shows](https://www.kaggle.com/datasets/shivamb/disney-movies-and-tv-shows) and [TV shows on Netflix, Prime Video, Hulu and Disney+](https://www.kaggle.com/datasets/ruchi798/tv-shows-on-netflix-prime-video-hulu-and-disney). You can read about them there, including variable definitions, sources, when they were created, and other information. Load the two datasets from the `data_raw` folder and use `skim()` to explore their structures.
+Two files containing data about thge content of streaming services were downloaded from Kaggle:  [Disney+ Movies and TV Shows](https://www.kaggle.com/datasets/shivamb/disney-movies-and-tv-shows) and [TV shows on Netflix, Prime Video, Hulu and Disney+](https://www.kaggle.com/datasets/ruchi798/tv-shows-on-netflix-prime-video-hulu-and-disney). You can read about them there, including variable definitions, sources, when they were created, and other information. Read the two datasets from the `data_raw` folder and use `skim()` to explore their structures.
 
 #### Disney+ Content Dataset
 
-```{r loaddisneydata}
+```{r readdisneydata}
 
 ```
 
@@ -44,7 +44,7 @@ Two files containing data about thge content of streaming services were download
 
 #### Streaming TV Content Dataset
 
-```{r loadstreamingdata}
+```{r readstreamingdata}
 
 ```
 
@@ -62,7 +62,7 @@ Two files containing data about thge content of streaming services were download
 
 The Disney+ dataset contains a variable that gives information about the `rating` for each program offering. Convert that variable into a factor that puts the ratings in (roughly) ascending order of age restriction/audience: `TV-Y`, `TV-Y7`, `TV-Y7-FV`, `TV-G`, `G`, `TV-PG`, `PG`, `PG-13`, `TV-14`. Delete the `show_id`, `director`, `cast`, and `description` variables. You should be able to do this all in one piped sequence.
 
-```{r factorratings}
+```{r factor&select}
 
 ```
 
